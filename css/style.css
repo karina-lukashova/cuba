@@ -53,6 +53,15 @@ a {
   border-bottom: 1px solid rgba(208, 212, 216, 0.5);
 }
 
+.title {
+  font-family: "Georgia", serif;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 38px;
+  color: #4E5665;
+  text-align: center;
+}
+
 .header__top {
   background-image: url("../images/header-bg.jpg");
   background-position: center;
@@ -140,11 +149,6 @@ a {
 
 .reasons__title {
   margin-bottom: 22px;
-  font-family: "Georgia", serif;
-  font-size: 32px;
-  line-height: 38px;
-  color: #4E5665;
-  text-align: center;
 }
 
 .reasons__link {
@@ -185,3 +189,95 @@ a {
   color: #909090;
 }
 
+.about {
+  padding-top: 80px;
+}
+
+.about__title {
+  margin-bottom: 13px;
+}
+
+.about__text {
+  margin-bottom: 72px;
+}
+
+.about__item {
+  margin-bottom: 100px;
+  padding: 70px 0;
+  background-repeat: no-repeat;
+}
+
+.about__item:last-of-type {
+  margin-bottom: 120px;
+}
+
+.about__item:nth-of-type(2n-1) {
+  background-image: url("../images/about-1-img.jpg");
+  background-position: 100% center;
+}
+
+.about__item:nth-of-type(2n) {
+  background-image: url("../images/about-2-img.jpg");
+  background-position: 0% center;
+}
+
+.about__box {
+  max-width: 470px;
+  padding-top: 33px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 18px;
+  background-color: #FFFFFF;
+  position: relative;
+}
+
+.about__item:nth-of-type(2n) .about__box {
+  margin-left: auto;
+}
+
+.about__box::before,
+.about__box::after {
+  content: "";
+  position: absolute;
+  width: 33px;
+  height: 33px;
+}
+
+.about__box::before {
+  border-top: 2px solid #ECB84C;
+  border-left: 2px solid #ECB84C;
+  top: 19px;
+  left: 19px;
+}
+
+.about__box::after {
+  border-bottom: 2px solid #ECB84C;
+  border-right: 2px solid #ECB84C;
+  bottom: 19px;
+  right: 19px;
+}
+
+.about__item:nth-of-type(2n) .about__box::before {
+  border-top: 2px solid #ECB84C;
+  border-right: 2px solid #ECB84C;
+  border-left: none;
+  left: auto;
+  right: 19px;
+}
+
+.about__item:nth-of-type(2n) .about__box::after {
+  border-bottom: 2px solid #ECB84C;
+  border-left: 2px solid #ECB84C;
+  border-right: none;
+  left: 19px;
+  bottom: 13px;
+}
+
+.about__box-title {
+  margin-bottom: 20px;
+  font-family: "Georgia", serif;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 25px;
+  color: #4E5665;
+}
