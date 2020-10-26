@@ -195,7 +195,7 @@ a {
 }
 
 .about {
-  padding-top: 80px;
+  padding: 80px 0;
 }
 
 .about__title {
@@ -224,6 +224,7 @@ a {
 .about__item:nth-of-type(2n) {
   background-image: url("../images/about-2-img.jpg");
   background-position: 0% center;
+  background-size: contain;
 }
 
 .about__box {
@@ -285,6 +286,128 @@ a {
   font-size: 24px;
   line-height: 25px;
   color: #4E5665;
+}
+
+.about__preview {
+  padding: 0 15px;
+}
+
+.preview__title {
+  margin-bottom: 38px;
+}
+
+.preview__image-box {
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 53px;
+  padding: 0 15px;
+  padding-top: 73px;
+  position: relative;
+}
+
+.preview__dot {
+  box-sizing: content-box;
+  width: 10px;
+  height: 10px;
+  background-color: #FFD600;
+  border-radius: 50%;
+  border: 11px solid rgba(236, 184, 76, 0.75);
+  background-clip: padding-box;
+  cursor: pointer;
+  position: absolute;
+}
+
+.preview__dot:hover {
+  transform: scale(1.2);
+}
+
+.preview__dot:hover::before, 
+.preview__dot:hover .preview__dot-text {
+  display: block;
+}
+
+.preview__dot--engine {
+  top: 190px;
+  left: 158px;
+}
+
+.preview__dot--door {
+  top: 188px;
+  left: 505px;
+}
+
+.preview__dot--roof {
+  top: 147px;
+  right: 386px;
+}
+
+.preview__dot--wheel {
+  bottom: 28px;
+  right: 309px;
+}
+
+.preview__dot::before {
+  display: none;
+  content: "";
+  background-image: url("../images/preview-roof-line.svg");
+  width: 244px;
+  height: 122px;
+  position: absolute;
+  cursor: default;
+}
+
+.preview__dot--engine::before {
+  left: 9px;
+  top: -124px;
+}
+
+.preview__dot--door::before {
+  left: 9px;
+  top: -124px;
+}
+
+.preview__dot--roof::before {
+  left: -2px;
+  top: -113px;
+  height: 110px;
+}
+
+.preview__dot--wheel::before {
+  transform: rotate(180deg) scale(-1, 1);
+  width: 246px;
+  height: 62px;
+  left: -46px;
+  top: 13px;
+}
+
+.preview__dot-text {
+  display: none;
+  white-space: nowrap;
+  cursor: text;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 28px;
+  position: absolute;
+}
+
+.preview__dot-text--engine {
+  left: 124px;
+  top: -152px;
+}
+
+.preview__dot-text--door {
+  left: 124px;
+  top: -152px;
+}
+
+.preview__dot-text--roof {
+  left: 112px;
+  top: -140px;
+}
+
+.preview__dot-text--wheel {
+  left: 89px;
+  top: 46px;
 }
 
 .photo {
