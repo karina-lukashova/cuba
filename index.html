@@ -15,10 +15,16 @@
     <div class="header__top">
       <div class="header__top-inner">
         <h1 class="header__title">Куба</h1>
-        <p class="header__text">Explore the world of Casas & Cadillacs</p>
+        <p class="header__text header__text--desk">
+          Explore the world of Casas & Cadillacs
+        </p>
+        <p class="header__text header__text--mob">
+          The world of Cadillacs
+        </p>
       </div>
     </div>
     <nav class="menu">
+      <button class="menu__btn">Меню</button>
       <ul class="menu__list">
         <li class="menu__item">
           <a class="menu__link" href="#">Резюме</a>
@@ -106,18 +112,30 @@
       <div class="about__preview preview">
         <h2 class="preview__title title">Кубинский Кадиллак</h2>
         <div class="preview__image-box">
-          <img src="images/preview-car.png" alt="Бирюзовый кадиллак">
+          <img class="preview__image-car" src="images/preview-car.png" alt="Бирюзовый кадиллак">
           <div class="preview__dot preview__dot--engine">
-            <p class="preview__dot-text preview__dot-text--engine">Супер двигатель</p>
+            <p class="preview__dot-text preview__dot-text--engine">
+              <img class="preview__dot-image" src="images/preview-part-1.png" alt="Двигатель кадиллака">
+              Супер двигатель
+            </p>
           </div>
           <div class="preview__dot preview__dot--door">
-            <p class="preview__dot-text preview__dot-text--door">Модная дверь</p>
+            <p class="preview__dot-text preview__dot-text--door">
+              <img class="preview__dot-image" src="images/preview-part-2.png" alt="Дверь кадиллака">
+              Модная дверь
+            </p>
           </div>
           <div class="preview__dot preview__dot--roof">
-            <p class="preview__dot-text preview__dot-text--roof">Откидная крыша</p>
+            <p class="preview__dot-text preview__dot-text--roof">
+              <img class="preview__dot-image" src="images/preview-part-3.png" alt="Крыша кадиллака">
+              Откидная крыша
+            </p>
           </div>
           <div class="preview__dot preview__dot--wheel">
-            <p class="preview__dot-text preview__dot-text--wheel">Стильные колёса</p>
+            <p class="preview__dot-text preview__dot-text--wheel">
+              <img class="preview__dot-image" src="images/preview-part-4.png" alt="Колесо кадиллака">
+              Стильные колёса
+            </p>
           </div>
         </div>
         <p class="preview__text container-content">
@@ -143,8 +161,10 @@
     <div class="container">
       <div class="footer__items">
         <div class="footer__item footer__item--first">
-          <h3 class="footer__item-title">Компания</h3>
-          <ul class="footer__item-list">
+          <h3 class="footer__item-title">
+            <button class="footer__item-btn footer__item-btn--first">Компания</button>
+          </h3>
+          <ul class="footer__item-list footer__item-list--first">
             <li>
               <a class="footer__item-link" href="#">О компании</a>
             </li>
@@ -157,8 +177,10 @@
           </ul>
         </div>
         <div class="footer__item footer__item--second">
-          <h3 class="footer__item-title">Детали</h3>
-          <ul class="footer__item-list">
+          <h3 class="footer__item-title">
+            <button class="footer__item-btn footer__item-btn--second">Детали</button>
+          </h3>
+          <ul class="footer__item-list footer__item-list--second">
             <li>
               <a class="footer__item-link" href="#">Бронирование</a>
             </li>
@@ -177,8 +199,10 @@
           </ul>
         </div>
         <div class="footer__item footer__item--third">
-          <h3 class="footer__item-title">Контакты</h3>
-          <ul class="footer__item-list">
+          <h3 class="footer__item-title">
+            <button class="footer__item-btn footer__item-btn--third">Контакты</button>
+          </h3>
+          <ul class="footer__item-list footer__item-list--third">
             <li>
               <a class="footer__item-link footer__item-link--contacts footer__item-link--write" href="#">Свяжись с нами</a>
             </li>
@@ -197,8 +221,10 @@
           </ul>
         </div>
         <div class="footer__item footer__item--fourth">
-          <h3 class="footer__item-title">Блог</h3>
-          <ul class="footer__item-list">
+          <h3 class="footer__item-title">
+            <button class="footer__item-btn footer__item-btn--fourth">Блог</button>
+          </h3>
+          <ul class="footer__item-list footer__item-list--fourth">
             <li>
               <a class="footer__item-link" href="#">Идеи для фотосессии</a>
             </li>
